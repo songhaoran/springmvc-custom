@@ -3,7 +3,7 @@ package com.song.model;
 import java.lang.reflect.Method;
 
 /**
- * Created by Song on 2020/09/30.
+ * 注解形式处理器
  */
 public class HandlerMethod {
 

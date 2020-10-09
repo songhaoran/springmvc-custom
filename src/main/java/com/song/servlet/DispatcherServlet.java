@@ -1,11 +1,7 @@
 package com.song.servlet;
 
 import com.song.adapter.HandlerAdapter;
-import com.song.adapter.HttpServletHandlerAdapter;
-import com.song.adapter.SimpleControllerHandlerAdapter;
-import com.song.mapping.BeanNameUrlHandlerMapping;
 import com.song.mapping.HandlerMapping;
-import com.song.mapping.SimpleUrlHandlerMapping;
 import com.song.spring.factory.support.DefaultListableBeanFactory;
 import com.song.spring.reader.XmlBeanDefinitionReader;
 import com.song.spring.resource.ClasspathResource;

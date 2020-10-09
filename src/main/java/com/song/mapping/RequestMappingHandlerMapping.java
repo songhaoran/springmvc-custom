@@ -8,17 +8,16 @@ import com.song.spring.factory.BeanFactory;
 import com.song.spring.factory.support.DefaultListableBeanFactory;
 import com.song.spring.init.InitializingBean;
 import com.song.spring.ioc.BeanDefinition;
-import org.apache.commons.lang3.StringUtils;
 
 import javax.servlet.http.HttpServletRequest;
-import java.lang.annotation.Annotation;
 import java.lang.reflect.Method;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
 /**
- * Created by Song on 2020/09/30.
+ * 1. 存储 请求url与注解形式处理器(HandlerMethod)的映射关系
+ * 2. 根据请求url,获取处理器
  */
 public class RequestMappingHandlerMapping implements HandlerMapping, BeanFactoryAware, InitializingBean {
 

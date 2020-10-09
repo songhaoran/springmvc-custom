@@ -4,7 +4,6 @@ import com.song.anotation.ResponseBody;
 import com.song.conversion.IntegerTypeHandler;
 import com.song.conversion.StringTypeHandler;
 import com.song.conversion.TypeHandler;
-import com.song.handler.HttpServletHandler;
 import com.song.model.HandlerMethod;
 import com.song.response.MapResponseValueHandler;
 import com.song.response.ResponseValueHandler;
@@ -21,7 +20,9 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-
+/**
+ * HandlerMethod对应的处理器适配器,执行HandlerMethod处理器
+ */
 public class RequestMappingHandlerAdapter implements HandlerAdapter {
 
     private Map<Class, TypeHandler> typeHandlers = new HashMap<>();
