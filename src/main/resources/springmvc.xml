@@ -1,0 +1,14 @@
+<beans>
+    <!--处理器适配器和处理器映射器-->
+    <bean class="com.song.adapter.HttpServletHandlerAdapter"></bean>
+    <bean class="com.song.adapter.SimpleControllerHandlerAdapter"></bean>
+    <bean class="com.song.adapter.RequestMappingHandlerAdapter"></bean>
+
+    <bean class="com.song.mapping.BeanNameUrlHandlerMapping"></bean>
+    <bean class="com.song.mapping.SimpleUrlHandlerMapping"></bean>
+    <bean class="com.song.mapping.RequestMappingHandlerMapping"></bean>
+
+    <!--配置处理器-->
+    <bean name="/queryUser" class="com.song.handler.QueryUserHandler"></bean>
+    <bean class="com.song.controller.UserController"></bean>
+</beans>
